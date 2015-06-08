@@ -1,0 +1,6 @@
+/build/
+/WebContent/
+.classpath
+.gradle/
+.project
+.settings/
