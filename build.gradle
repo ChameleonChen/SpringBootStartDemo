@@ -20,6 +20,8 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'spring-boot'
 
+mainClassName = "demo.SpringBootDemo"
+
 jar {
 	baseName = 'spring-demo-by-chameleonchen'
 	version = '0.0.1'
