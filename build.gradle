@@ -11,6 +11,16 @@ buildscript {
 		maven {
 			url "http://repo.spring.io/milestone"
 		}
+		
+		/**
+		 * 这是Apache的Maven库
+		 */
+		maven {
+			url "http://repository.apache.org/snapshots/"
+		}
+		maven {
+			url "http://repo.maven.apache.org/maven2"
+		}
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.4.RELEASE")
@@ -25,16 +35,6 @@ mainClassName = "demo.SpringBootDemo"
 jar {
 	baseName = 'spring-demo-by-chameleonchen'
 	version = '0.0.1'
-}
-
-repositories {
-	jcenter()
-	maven {
-		url "http://repo.spring.io/snapshot"
-	}
-	maven {
-		url "http://repo.spring.io/milestone"
-	}
 }
 
 dependencies {
@@ -61,6 +61,12 @@ dependencies {
 	 * Thymeleaf是一个处理XML、HTML的模板引擎，介绍见 http://www.thymeleaf.org/ 
 	 */
 	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+	
+	//HttpClient http://hc.apache.org/httpcomponents-client-4.5.x/httpclient/dependency-info.html
+	compile("org.apache.httpcomponents:httpclient:4.5")
+	
+	// FastJson, 使用Apache Maven
+	compile("com.alibaba:fastjson:1.2.6")
 }
 
 /***************************************************************************************************/
