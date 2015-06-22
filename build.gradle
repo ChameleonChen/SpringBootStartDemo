@@ -37,6 +37,26 @@ jar {
 	version = '0.0.1'
 }
 
+repositories {
+	jcenter()
+	maven {
+		url "http://repo.spring.io/snapshot"
+	}
+	maven {
+		url "http://repo.spring.io/milestone"
+	}
+	
+	/**
+	 * 这是Apache的Maven库
+	 */
+	maven {
+		url "http://repository.apache.org/snapshots/"
+	}
+	maven {
+		url "http://repo.maven.apache.org/maven2"
+	}
+}
+
 dependencies {
 	// 该模块用来开发web应用
 	compile("org.springframework.boot:spring-boot-starter-web")
