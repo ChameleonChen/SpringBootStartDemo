@@ -62,6 +62,8 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 	
+	compile("org.springframework.boot:spring-boot-starter-actuator")
+	
 	/*
 	 * 这是安全模块，加入之后访问Spring服务器需要验证。
 	 */
