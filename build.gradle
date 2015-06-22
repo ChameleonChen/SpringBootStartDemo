@@ -76,6 +76,9 @@ dependencies {
 	 */
 	compile ("org.hsqldb:hsqldb")
 	
+	// MySql
+	compile("mysql:mysql-connector-java")
+	
 	/*
 	 * MVC模式中，显示View的时候需要依赖 Thymeleaf 技术
 	 * Thymeleaf是一个处理XML、HTML的模板引擎，介绍见 http://www.thymeleaf.org/ 
@@ -88,5 +91,6 @@ dependencies {
 	// FastJson, 使用Apache Maven
 	compile("com.alibaba:fastjson:1.2.6")
 }
+
 
 /***************************************************************************************************/
