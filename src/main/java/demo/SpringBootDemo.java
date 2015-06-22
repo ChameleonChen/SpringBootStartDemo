@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+import demo.restdemo.ProductDetail;
+import demo.restdemo.ProductDetailRepository;
+
 @ComponentScan	// 告诉Spring对项目的classpath进行扫描寻找组件
 @EnableAutoConfiguration
 @SpringBootApplication

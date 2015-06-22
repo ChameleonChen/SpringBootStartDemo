@@ -1,4 +1,4 @@
-package demo;
+package demo.restdemo;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
